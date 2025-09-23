@@ -1,7 +1,10 @@
-/bin/
+bin/
 *.class
 *.log
-.env
-.idea/
+*.tmp
+*.bak
+*.swp
+*.DS_Store
 .vscode/
-.DS_Store
+.idea/
+*.iml
