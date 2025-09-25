@@ -71,4 +71,16 @@ public abstract class Abonnement {
                 ", statut=" + statut +
                 '}';
     }
+
+     public boolean isActive() {
+        return this.statut == Statut.ACTIVE;
+    }
+
+    public boolean isExpired() {
+        return dateFin != null && dateFin.isBefore(LocalDate.now());
+    }
+
+    public boolean isWithEngagement() {
+        return false;
+    }
 }

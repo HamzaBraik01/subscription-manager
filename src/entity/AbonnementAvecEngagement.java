@@ -28,4 +28,9 @@ public class AbonnementAvecEngagement extends Abonnement {
     public String toString() {
         return super.toString() + ", dureeEngagementMois=" + dureeEngagementMois;
     }
+
+    @Override
+    public boolean isWithEngagement() {
+        return true;
+    }
 }
